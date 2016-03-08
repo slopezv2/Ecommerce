@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'compras/carrito'
+
     get "celulares" => "categoria#celulares",as: :celulares 
 
     get "tablets" => "categoria#tablets",as: :tablets
@@ -7,6 +9,8 @@ Rails.application.routes.draw do
     get "bluetooth" => "categoria#bluetooth",as: :bluetooth
 
     get "sonido" => "categoria#sonido",as: :sonido
+   
+    get "carrito" => "compras#carrito",as: :carrito
 
   root 'welcome#index'
   # The priority is based upon order of creation: first created -> highest priority.
