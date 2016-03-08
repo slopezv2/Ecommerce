@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 
+    get "celulares" => "categoria#celulares",as: :celulares 
+
+    get "tablets" => "categoria#tablets",as: :tablets
+
+    get "bluetooth" => "categoria#bluetooth",as: :bluetooth
+
+    get "sonido" => "categoria#sonido",as: :sonido
+
   root 'welcome#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
