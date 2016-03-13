@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     get "sonido" => "categoria#sonido",as: :sonido
    
     get "carrito" => "compras#carrito",as: :carrito
+    get "pago" => "compras#pago",as: :pago
 
   root 'welcome#index'
   # The priority is based upon order of creation: first created -> highest priority.
